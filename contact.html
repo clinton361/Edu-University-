@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Web design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- -----HEADER----- -->
+    <section id="sub-header">
+        <nav>
+            <a href=""><img src="./img/eduford_img/logo.png" alt=""></a>
+
+            <div class="nav-links" id="nav-links">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- -----About Us content----- -->
+    <section id="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut deserunt alias expedita ipsa voluptas dolores labore, aspernatur quidem quo nesciunt suscipit asperiores consequuntur eos impedit quod harum maiores necessitatibus. Facere?</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="./img/eduford_img/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!------COURSE------->
+   
+
+    <!-- -----CAMPUS----- -->
+   
+
+    <!-- -----FACILITIES----- -->
+    
+
+    <!-- -----Testimonials----- -->
+   
+    
+    <!-- -----Call to Action----- -->
+   
+
+    <!-- -----FOOTER----- -->
+    <section id="footer">
+        <h4>ABOUT US</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sint suscipit <br> accusantium nemo quia, veniam iure modi pariatur minus quisquam!</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+
+    <!-----JS Toggle----->
+    <script>
+        var navLinks = document.getElementById('nav-links');
+
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+
+        function hideMenu(){
+            navLinks.style.right = '-40%';
+        }
+    </script>
+</body>
+</html>
