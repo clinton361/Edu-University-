@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Web design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- -----HEADER----- -->
+    <section id="sub-header">
+        <nav>
+            <a href=""><img src="./img/eduford_img/logo.png" alt=""></a>
+
+            <div class="nav-links" id="nav-links">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- -----CONTACT US PAGE----- -->
+    <section id="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4550129489307!2d5.601921874804205!3d6.335055693654595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d1829e1a36f7%3A0x31a6970d37330ff8!2sBenson%20Idahosa%20University%20%2C%20Edo%20State!5e0!3m2!1sen!2sng!4v1715589262097!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section id="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span>
+                        <h5>XYZ, Road, ABC Building</h5>
+                        <p>Benin, Edo, NG</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>+234 12345678</h5>
+                        <p>Monday to Friday, 8AM to 4PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>info@firstlastname.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" name="name" placeholder="Enter Your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" placeholder="message" name="message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----FOOTER----- -->
+    <section id="footer">
+        <h4>ABOUT US</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sint suscipit <br> accusantium nemo quia, veniam iure modi pariatur minus quisquam!</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+
+    <!-----JS Toggle----->
+    <script>
+        var navLinks = document.getElementById('nav-links');
+
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+
+        function hideMenu(){
+            navLinks.style.right = '-40%';
+        }
+    </script>
+</body>
+</html>
